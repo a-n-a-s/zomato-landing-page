@@ -1,28 +1,30 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* TO use Box Model  */
 }
+
 body {
   font-family: "Merriweather", serif;
   background-color: #ebf2ff;
 }
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: #fff;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  height: 10vh;
 }
-.navbar_brand {
+
+.navbar__brand {
   width: 100px;
 }
-.navbar_logo {
+
+.navbar__logo {
   width: 100%;
 }
-.nav_item {
+
+.nav__item {
   background-image: linear-gradient(
     to right,
     #ff512f 0%,
@@ -35,25 +37,23 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
-.nav_item:hover {
-    color: #dd2476;
-    background-image: none;
-    background-color: #fff;
-    border: 1px solid #ff512f;
-    font-size: bold;
 
+.nav__item:hover {
+  border: 2px solid blue;
 }
-@media screen and (min-width: 768px) {
+
+@media (min-width: 768px) {
   .navbar {
     justify-content: space-between;
-    padding: 0px 30px;
+    padding: 2px 30px;
   }
 }
-@media screen and (min-width: 1020px) {
-  .navbar_brand {
+
+@media (min-width: 1020px) {
+  .navbar__brand {
     width: 150px;
   }
-  .nav_item {
+  .nav__item {
     padding: 20px;
     font-size: 20px;
   }

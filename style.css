@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* TO use Box Model  */
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 body {
@@ -18,6 +18,7 @@ body {
   background-color: #fff;
   padding: 0 40px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
 }
 
 .navbar__brand {
@@ -41,51 +42,47 @@ body {
 }
 
 .button__primary:hover {
-  box-shadow: inset 300px 0 0 0 #ce1212;
+  box-shadow: inset 300px 0 0 0 orangered;
   color: #fff;
 }
-.container{
+.container {
   width: 85%;
   margin: 20px auto;
   padding: 0 20px;
 }
-.hero__container{
-
+.hero__container {
   display: flex;
   flex-direction: row-reverse;
-  margin: 160px 0px ;
+  margin: 160px 0px;
   align-items: center;
-  
 }
-.hero__image__container
-{
-  width : 600px;
+.hero__image__container {
+  width: 600px;
 }
-.hero__img{
+.hero__img {
   border-radius: 10px;
   width: 100%;
 }
-.hero__description{
+.hero__description {
   width: 700px;
-margin-right: 20px;
+  margin-right: 20px;
 }
-.hero__text{
+.hero__text {
   font-size: 3rem;
   color: #1d3557;
   font-weight: bold;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   line-height: 1;
   margin-bottom: 20px;
-  
 }
-.food__list__container{
+.food__list__container {
   position: relative;
   margin: 0px 0;
 }
-.food__list__container__diagonal{
-  margin-top:0px ;
+.food__list__container__diagonal {
+  margin-top: 0px;
   position: absolute;
-  background:linear-gradient(to right, #d31027, #ea384d);
+  background: linear-gradient(to right, #d31027, #ea384d);
   transform: skewY(-5deg);
   left: 0px;
   position: absolute;
@@ -94,36 +91,125 @@ margin-right: 20px;
   width: 100%;
   z-index: -10;
 }
-.menu__card__list{
+.menu__card__list {
   display: flex;
   justify-content: space-around;
-  padding: 50px 0 ;
+  padding: 50px 0;
   width: 100%;
   margin: 30px 0;
-  
+
   /* height: 700px;  */
-  
-  
 }
-.menu__card{
+.menu__card {
   width: 100%;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   border-radius: 10px 10px 10px 10px;
   margin: 0 20px;
   background: #fff;
 }
-.food__menu__card__image{
-  width: 100%;
-  border-radius:10px 10px 0 0 ;
+.push__up {
+  margin-top: -30px;
+  margin-bottom: 30px;
 }
-.food__list__text{
+.food__menu__card__image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.food__list__text {
   text-align: center;
-  color: #000;
+  color: #1d3557;
   font-size: 3rem;
 }
-.food__menu__card__details{
+.food__menu__card__details {
   margin: 25px 20px;
 }
-.food__menu__card__details p{
+.food__menu__card__details p {
   display: inline;
+}
+.view__more__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: none;
+  color: #1d3557;
+  transition: 0.3s;
+}
+.view__more__button:hover {
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background: #fff;
+  color: #dd2476;
+  margin: 0 20rem;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+.restaurant__list__container {
+  width: 100%;
+  margin: 70px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.restaurant__list__text{
+  padding: 0 10px;
+}
+.text-x1 {
+  line-height: 1;
+  font-size: 3rem;
+  color: #1d3557;
+  font-weight: 900;
+}
+.row__1,
+.row__2 {
+  display: flex;
+  width: 100%;
+}
+.row__1 {
+  justify-content: center;
+  align-items: baseline;
+  
+}
+.row__2 {
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.restaurant1,
+.restaurant2,
+.restaurant3,
+.restaurant4 {
+  margin: 3px 3px;
+  border-radius: 5px;
+}
+.restaurant2,
+.restaurant4 {
+  width: 300px;
+  height: 260px;
+}
+.restaurant1,
+.restaurant3 {
+  width: 250px;
+  height: 180px;
+}
+.sub__container h1{
+  text-align: center;
+  line-height: 1;
+  font-size: 3rem;
+  color: #1d3557;
+  font-weight: 900;
+}
+.sub__container{
+  
+}
+.input__div{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.input__div input{
+  width: 30%;
+  padding: 5px;
 }

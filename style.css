@@ -31,7 +31,7 @@ body {
 
 .button__primary {
   background: linear-gradient(to right, #d31027, #ea384d);
-
+  box-sizing: border-box;
   color: #fff;
   border: none;
   padding: 15px;
@@ -129,6 +129,7 @@ body {
 }
 .view__more__button {
   display: flex;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
   font-weight: bold;

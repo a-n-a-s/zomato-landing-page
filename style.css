@@ -388,16 +388,16 @@ footer ul li {
   .hero__text {
     font-size: 2rem;
   }
-  .text-x1{
+  .text-x1 {
     font-size: 2.5rem;
   }
-  .container{
+  .container {
     width: 100%;
   }
-  .navbar{
+  .navbar {
     padding: 0.7rem 2rem;
   }
-  .hero__container{
+  .hero__container {
     margin: 5rem 1rem;
   }
 }
